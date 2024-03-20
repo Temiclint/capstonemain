@@ -1,11 +1,11 @@
 variable "domain_name" {
-  description = "This is the domain name"
+  description = "Domain name"
   type        = string
-  default     = "nwokolo.live"
+  default     = "direadelaja.com"
 }
   
 variable "alt_domain_name" {
   description = "This is the alternative domain name"
   type        = string
-  default     = "*.nwokolo.live"
+  default     = "*.direadelaja.com"
 }
