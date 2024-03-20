@@ -1,12 +1,12 @@
 data "aws_eks_node_group" "eks-node-group" {
-  cluster_name = "student-dev-eks-demo"
+  cluster_name = "student-dev-eks-capstone1"
   node_group_name = "student-dev-eks-ng-public"
 }
 
 resource "time_sleep" "wait_for_kubernetes" {
 
     depends_on = [
-        data.aws_eks_cluster.student-dev-eks-demo
+        data.aws_eks_cluster.student-dev-eks-capstone1
     ]
 
     create_duration = "20s"
